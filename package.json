@@ -1,0 +1,24 @@
+{
+  "name": "ens-revenues",
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy hepnerthomas/ens-revenues --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",    "create-local": "graph create --node http://localhost:8020/ scaffold-eth/your-contract",
+    "remove-local": "graph remove --node http://localhost:8020/ scaffold-eth/your-contract",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 scaffold-eth/your-contract"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.23.2",
+    "@graphprotocol/graph-ts": "^0.23.1"
+  },
+  "dependencies": {
+    "mustache": "^3.1.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "truffle": "^5.0.4",
+    "truffle-contract": "^4.0.5",
+    "truffle-hdwallet-provider": "^1.0.4"
+  }  
+}
